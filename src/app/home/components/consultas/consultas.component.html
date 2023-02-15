@@ -1,0 +1,6 @@
+<h2>Bienvenido a la sección de hechos acerca de los michis</h2>
+<h4>Haz clic en el botón para consultar</h4>
+<a [routerLink]="['/']">Regresar</a>&nbsp; <button (click)="consultar()">Consultar</button>
+<div *ngFor="let hecho of data">
+	<img src="/assets/footprint.png" width="16x16"><h3>{{hecho.text}}</h3>
+</div>

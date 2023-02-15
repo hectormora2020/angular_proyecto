@@ -1,0 +1,10 @@
+<h2>Bienvenido a mi Michi-sitio: Facts about cats</h2>
+<div><i>Información obtenida de: https://cat-fact.herokuapp.com/</i></div>
+<h4>Las consultas son solo para usuarios registrados ingresa tus credenciales ULTRA SECRETAS (usuario:a, contraseña:a)</h4>
+
+
+Usuario: <input type="text" [(ngModel)]="username"><br>
+Contraseña: <input type="password" [(ngModel)]="contrasenya"><br>
+<button [routerLink]="['consultas']" (click)="validaUsuario()">Ingresar</button>
+
+<p *ngIf="error" [ngClass]="{'tipoError': error}">{{mensajeError}}</p>
